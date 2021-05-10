@@ -79,6 +79,12 @@ app.add_route("/sample", handler)
 
 ```
 
+## Start Server
+
+```shell
+gunicorn app:<name-of-app>
+```
+
 ### Unit Tests
 
 The recommended way of writing unit tests is with [pytest](https://docs.pytest.org/en/latest/). There are two built in fixtures
