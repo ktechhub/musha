@@ -18,7 +18,10 @@ def home(request, response):
 def about(request, response):
     response.text = "Hello from the ABOUT page"
 
-
+@app.route("/contact")
+def contact(request, response):
+    response.text = "Welcome to CONTACT US page"
+    
 @app.route("/hello/{name}")
 def greeting(request, response, name):
     response.text = f"Hello, {name}!"
